@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: gilroy;
+    font-weight: 500;
+    /* overflow: hidden; */
+    cursor: default;
+}
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-ExtraBold\ 800.ttf);
+    src: url(Gilroy-Light\ 300.ttf);
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.navbar{
+    width: 100%;
+    height: 13vh;
+    background-color: #ffffff2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.lnav a {
+    margin: 1.5vw;
+    text-decoration: none;
+    
+    
+    
+
+}
+.lnav a:hover{
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+.rnav a{
+    margin: 1.5vw;
+    text-decoration: none;
+    
+    
+
+    
+}
+.rnav a:hover{
+    text-underline-offset: 10px ;
+    text-decoration: underline;
+
+}
+.rnav button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 1vh 1.1vw;
+    border-radius: 2vw;
+    transition: 0.12s 0.12s;
+    margin-right: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px ;
+    cursor: pointer;
+    width: 6vw;
+
+}
+.rnav button:hover{
+    transform: scale(1.1);
+}
+#box{
+    display: flex;
+    height: calc(100vh - 15vh);
+    background-color: #04060800;
+    height: 100vh;
+    
+    
+    
+    /* filter: blur(1px); */
+    
+
+}
+#main{
+    background-image: url(image\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#boxmain{
+    background-image: url(image\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.left{
+    color: black;
+    /* background-color: yellow; */
+    width: 50%;
+    height: 100%;
+}
+.right{
+    /* background-color:blue; */
+    color: black;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    
+}
+.left img{
+    height: 85vh;
+    margin-left: 9vw;
+    margin-top: 2vw;
+    /* opacity: 0.4; */
+    
+    
+}
+.right h2{
+    font-weight: bolder;
+    margin-top: 6vh;
+    letter-spacing: 4px;
+}
+.right input{
+    color: #040608;
+    font-weight: 600;
+    margin: 1.5vh 1vh;
+    font-size: 3.5vh;
+    height: 8vh;
+    border-radius: 8px;
+    background-color: #EAF0F7;
+    border: none;
+    padding-left:2vw ;
+    
+}
+
+.right input:focus{
+    outline:  none;
+    border:white;
+}
+.right input::placeholder{
+    font-weight: 300;
+    font-size: medium;
+    
+    
+}
+#box button{
+    background-color: black;
+    color: white;
+    height: 8vh;
+    width: 23.5vw;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 5vh;
+}
+#box button:hover{
+    transform: scale(1.050);
+}
+#box p{
+    margin-left: 14vw;
+    margin-top: 0.8vh;
+    font-size: small;
+    color: #616364;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    cursor: pointer;
+}
+#box p:hover{
+    font-weight: 600;
+
+}
+#box .h{
+    margin-top: 6vh;
+}
+#box .social{
+    height:8vh;
+    width: 6vw;
+    margin-right:6px;
+    background-color: #F7F7F5;
+    border: 1px solid #d1d1d1;
+}
+#box .social img{
+    height: 30px;
+}
+@media (max-width:600px){
+    
+   
+   
+    #box{
+        flex-direction: column;
+        
+    }
+    .navbar{
+        height: 6vh;
+    }
+    .navbar a{
+        font-size: 5px;
+    }
+    .rnav button{
+        font-size: 5px;
+    }
+    .left{
+        height: 100%;
+        width: 100%;
+        /* display: none; */
+        position: relative;
+        background-image: url(model.png);
+        background-position: top;
+        background-size: cover;
+        opacity: 0.23;
+    }
+    .right{
+        
+            height: 50%;
+            width: 100%;
+            /* margin-bottom: 40vh; */
+            position: absolute;
+        
+    }
+    .left img{
+        height: 10vh;
+        /* filter: blur(0.86px); */
+        opacity: 0.54;
+        /* margin-top: 25vh; */
+        /* margin-left: 0vw; */
+        display: none;
+    }
+   
+    #box button{
+        height: 8vh;
+        width: 48vw;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 5vh;
+    }
+    #box .social{
+        height:8vh;
+        width: 19vw;
+
+    }
+
+}
